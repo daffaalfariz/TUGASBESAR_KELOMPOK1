@@ -5,7 +5,7 @@ const sequelize = require('../configs/sequelize');
 class Categorys extends Sequelize.Model {}
 
 Categorys.init({
-  Category_name: Sequelize.STRING
+  categorysName: Sequelize.STRING
 }, { sequelize, modelName: 'categorys' });
 
 module.exports = Categorys;
