@@ -5,10 +5,10 @@ const sequelize = require('../configs/sequelize');
 class Books extends Sequelize.Model {}
 
 Books.init({
-	Book_name: Sequelize.STRING,
-	Book_page: Sequelize.INTEGER,
-	Book_stock: Sequelize.INTEGER,
-	Book_price: Sequelize.INTEGER	
+	name: Sequelize.STRING,
+	stock: Sequelize.INTEGER,
+	price: Sequelize.INTEGER,
+	categorysId: Sequelize.INTEGER	
 }, {sequelize, modelName: 'books' });
 
 module.exports = Books;
