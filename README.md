@@ -7,35 +7,37 @@
 * Ridho Alsyahid
 
 ## IP Public Server
-
+```
+http://159.89.194.18:3101
+```
 ## List API
 
 ```
 All List Books (Method:GET)
-	IP/books/
+	http://159.89.194.18:3101/books/
 ```
 
 ```
 View one Books (Method:GET)
-	IP/books/:id
+	http://159.89.194.18:3101/books/:id
 ```
 
 ```
 Order Books (Method:POST)
-	IP/orders
+	http://159.89.194.18:3101/orders
 ```
 
 ```
 Create a Books (Method:POST)
-	IP/books/
+	http://159.89.194.18:3101/books/
 ```
 
 ```
 Delete a Books (Method:DELETE)
-	IP/books/:id
+	http://159.89.194.18:3101/books/:id
 ```
 
 ```
 Update a Books (Method:PUT)
-	IP/bookd/:id
+	http://159.89.194.18:3101/bookd/:id
 ```
