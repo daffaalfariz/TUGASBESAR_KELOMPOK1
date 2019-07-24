@@ -13,7 +13,7 @@ module.exports.getAllListBooks = (req, res) => {
 }
 
 module.exports.getBooksById = (req, res) => {
-	Books.findById(req.params.id)
+	Books.findByPk(req.params.id)
 	.then((books) => {
 		res.json(books);
 	}).catch((error) => {
