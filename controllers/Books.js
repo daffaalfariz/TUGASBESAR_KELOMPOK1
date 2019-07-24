@@ -27,16 +27,16 @@ module.exports.postBooks = (req, res) =>{
 			res.sendStatus(403);
 		}else{
 			if (authData['roles']=="admin") {
-				var name: req.body.name,
-				var stock: req.body.stock,
-				var price: req.body.price,
-				var categorysId: req.body.categorysId
+				Name: req.body.name;
+				Stock: req.body.stock;
+				Price: req.body.price;
+				CategorysId: req.body.categorysId;
 				console.log(categorysId);
 				Books.create({
 					Name:       Name,
 					Stock:      Stock,
 					Price:      Price,
-					CategoryId: CategoryId
+					CategorysId: CategorysId
 				})
 				.then(books => {
 					res.json(books)
@@ -84,10 +84,10 @@ module.exports.putBooks = (req, res) =>{
 			res.sendStatus(403);
 		}else{
 			if (authData['roles']=="admin") {
-				var name: req.body.name,
-				var stock: req.body.stock,
-				var price: req.body.price,
-				var categorysId: req.body.categorysId
+				Name: req.body.name;
+				Stock: req.body.stock;
+				Price: req.body.price;
+				CategorysId: req.body.categorysId;
 
 				Books.update({
   					Name:        Name,
