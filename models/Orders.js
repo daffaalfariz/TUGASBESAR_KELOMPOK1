@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize');
 
-const sequelize = require('../configs/Sequelize');
+const sequelize = require('../configs/sequelize');
 
 class Orders extends Sequelize.Model {}
 

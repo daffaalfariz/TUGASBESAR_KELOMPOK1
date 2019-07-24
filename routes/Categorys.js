@@ -1,7 +1,7 @@
 const express = require('express');
 const auth = require('../configs/auth');
 
-const router = express.Router()
+const router = express.Router();
 
 const categorysController = require("../controllers/Categorys");
 
